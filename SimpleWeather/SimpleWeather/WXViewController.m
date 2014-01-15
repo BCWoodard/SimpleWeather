@@ -32,6 +32,12 @@
     self.view.backgroundColor = [UIColor redColor];
 }
 
+#pragma mark - Set Status Bar Color
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
