@@ -173,8 +173,7 @@
 				4ABDA796188722020019B511 /* Images.xcassets */,
 				4ABDA7BA18872C820019B511 /* Images */,
 				4ABDA78B188722020019B511 /* Supporting Files */,
-				4ABDA7B3188726010019B511 /* WXViewController.h */,
-				4ABDA7B4188726010019B511 /* WXViewController.m */,
+				4ABDA7EC18873B800019B511 /* Controller */,
 			);
 			path = SimpleWeather;
 			sourceTree = "<group>";
@@ -247,6 +246,15 @@
 				4ABDA7D318872CA10019B511 /* weather-tstorm@2x.png */,
 			);
 			path = "Weather Icons";
+			sourceTree = "<group>";
+		};
+		4ABDA7EC18873B800019B511 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4ABDA7B3188726010019B511 /* WXViewController.h */,
+				4ABDA7B4188726010019B511 /* WXViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
