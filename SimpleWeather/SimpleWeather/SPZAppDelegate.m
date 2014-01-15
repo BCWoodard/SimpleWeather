@@ -7,6 +7,9 @@
 //
 
 #import "SPZAppDelegate.h"
+#import "WXViewController.h"
+#import <TSMessage.h>
+
 
 @implementation SPZAppDelegate
 
@@ -14,8 +17,15 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    // 1. Set the rootViewController to WXViewController
+    self.window.rootViewController = [[WXViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    // 2. Identify which window TSMessage should display notices by default
+    [TSMessage setDefaultViewController:self.window.rootViewController];
+    
     return YES;
 }
 
